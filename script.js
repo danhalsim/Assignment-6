@@ -19,15 +19,14 @@ async function getWeatherData(city) {
 // Function to display current weather
 function displayCurrentWeather(data) {
     const { name, main, weather, wind } = data;
-    const iconUrl = `https://openweathermap.org/img/wn/${weather[0].icon}.png`;
+    const weatherImage = `https://openweathermap.org/img/wn/${weather[0].icon}.png`;
 
     const currentWeatherInfo = document.createElement('div');
-    // currentWeatherInfo.classList.add('weather-info');
     currentWeatherInfo.innerHTML = `
         <p class="ml-3 flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white">${name} (${new Date().toLocaleDateString()})</p>
-        <img src="${iconUrl}" alt="Weather Icon">
-        <p class="ml-3 flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white">Temperature: ${main.temp}°F</p>
-        <p class="ml-3 flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white">Wind Speed: ${wind.speed} m/s</p>
+        <img src="${weatherImage}">
+        <p class="ml-3 flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white">Temp: ${main.temp}°F</p>
+        <p class="ml-3 flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white">Wind: ${wind.speed} MPH</p>
         <p class="ml-3 flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white">Humidity: ${main.humidity}%</p>
     `;
 
@@ -55,15 +54,15 @@ function displayForecast(data) {
 
     for (let i = 0; i < forecastList.length; i += 8) {
         const { dt_txt, main, weather, wind } = forecastList[i];
-        const iconUrl = `https://openweathermap.org/img/wn/${weather[0].icon}.png`;
+        const weatherImage = `https://openweathermap.org/img/wn/${weather[0].icon}.png`;
 
         const forecastDay = document.createElement('div');
         forecastDay.classList.add('forecast-day');
         forecastDay.innerHTML = `
             <p class="ml-3 flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white">${new Date(dt_txt).toLocaleDateString()}</p>
-            <img src="${iconUrl}" alt="Weather Icon">
-            <p class="ml-3 flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white">Temperature: ${main.temp}°F</p>
-            <p class="ml-3 flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white">Wind Speed: ${wind.speed} m/s</p>
+            <img src="${weatherImage}">
+            <p class="ml-3 flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white">Temp: ${main.temp}°F</p>
+            <p class="ml-3 flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white">Wind: ${wind.speed} MPH</p>
             <p class="ml-3 flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white">Humidity: ${main.humidity}%</p>
         `;
 
