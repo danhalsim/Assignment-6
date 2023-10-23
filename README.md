@@ -3,7 +3,7 @@
 
 ## Description
 
-
+This project is a weather dashboard application. You can search for your city to find its current weather and weather predictions for the next 5 days. The application will also store your recent searches.
 
 ## Table of Contents
 
@@ -17,11 +17,11 @@
 
 ## Installation
 
-Access this application here: 
+Access this application here: https://danhalsim.github.io/Module-6-Weather-Dashboard/
 
 ## Usage
 
-Enter the your note title and text into the fields. Save or delete your notes by clicking the respective buttons.
+Enter the city name into the search bar. Recently searched cities appear on the left.
 
 ## Credits
 
