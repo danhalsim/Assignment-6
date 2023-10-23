@@ -124,10 +124,12 @@ function clearLocalStorage() {
 };
 
 searchInput.addEventListener("keyup", function(event) {
+    // console.log("key pressed");
     event.preventDefault();
     if (event.key === "Enter") {
         // console.log("enter key used");
         addCity();
+        // searchButton.click();
     }
 });
 
