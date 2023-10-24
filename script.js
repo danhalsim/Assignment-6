@@ -123,15 +123,19 @@ function clearLocalStorage() {
     location.reload();
 };
 
+
+// There's something wrong with this enter key event listener for the search bar
+// I can't figure it out at this time
 searchInput.addEventListener("keyup", function(event) {
-    // console.log("key pressed");
     event.preventDefault();
+    // console.log("key pressed"); // This console log works all the time
     if (event.key === "Enter") {
-        // console.log("enter key used");
-        addCity();
-        // searchButton.click();
-    }
+        console.log("enter key used"); // This console log and the functions below do not run
+        // addCity();
+        searchButton.click();
+    };
 });
+
 
 searchButton.addEventListener("click", function(event) {
     event.preventDefault();

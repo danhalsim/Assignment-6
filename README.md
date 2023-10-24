@@ -3,7 +3,7 @@
 
 ## Description
 
-This project is a weather dashboard application. You can search for your city to find its current weather and weather predictions for the next 5 days. The application will also store your recent searches.
+This project is a weather dashboard application. You can search for your city to find its current weather and its forecast for the next 5 days. The application will also store your recent searches.
 
 ## Table of Contents
 
@@ -17,7 +17,9 @@ This project is a weather dashboard application. You can search for your city to
 
 ## Installation
 
-Access this application here: https://danhalsim.github.io/Module-6-Weather-Dashboard/
+Access this application here:
+
+https://danhalsim.github.io/Module-6-Weather-Dashboard/
 
 ## Usage
 
@@ -25,14 +27,25 @@ Enter the city name into the search bar. Recently searched cities appear on the 
 
 ## Credits
 
-- MDN Web Docs for help with
-    -
-- Xpert Learning Assistant for help with:
-    - 
-- Express
-    - 
-- UUID
-    - 
+The Full-Stack Blog: How to Use API Keys
+- https://coding-boot-camp.github.io/full-stack/apis/how-to-use-api-keys
+
+OpenWeather API
+- https://openweathermap.org/forecast5
+
+MDN Web Docs: async and await functions
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
+
+Xpert Learning Assistant for help with:
+- Fetching a request URL (script.js lines 18-25)
+- Creating a for loop (script.js lines 52-54)
+- Capitalizing the first letter(s) of a string (script.js lines 71-77)
+
+Tailwind CSS
+- https://tailwindcss.com/docs/installation
+
+Flowbite - Tailwind CSS component library
+- https://flowbite.com/docs/getting-started/introduction/
 
 ## License
 
