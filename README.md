@@ -5,6 +5,8 @@
 
 This project is a weather dashboard application. You can search for your city to find its current weather and its forecast for the next 5 days. The application will also store your recent searches.
 
+This application uses OpenWeather API for weather data and local storage to store search history.
+
 ## Table of Contents
 
 - [Installation](#installation)
